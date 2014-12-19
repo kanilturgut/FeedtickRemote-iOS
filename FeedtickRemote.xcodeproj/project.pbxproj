@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A1612B22F72C9CD25760B0E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E95262082D6AACFD611A003B /* libPods.a */; };
+		E90A544D1A445EA90072606F /* instagram_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E90A544B1A445EA90072606F /* instagram_icon.png */; };
+		E90A544E1A445EA90072606F /* twitter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E90A544C1A445EA90072606F /* twitter_icon.png */; };
+		E910C2591A42034200FB67EA /* HubController.m in Sources */ = {isa = PBXBuildFile; fileRef = E910C2581A42034200FB67EA /* HubController.m */; };
+		E910C25D1A42BB6300FB67EA /* PostController.m in Sources */ = {isa = PBXBuildFile; fileRef = E910C25C1A42BB6300FB67EA /* PostController.m */; };
+		E910C2621A430EB100FB67EA /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E910C2601A430EB100FB67EA /* PostCell.m */; };
+		E910C2631A430EB100FB67EA /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E910C2611A430EB100FB67EA /* PostCell.xib */; };
 		E9D763161A419AF80083CDF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D763151A419AF80083CDF1 /* main.m */; };
 		E9D763191A419AF80083CDF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D763181A419AF80083CDF1 /* AppDelegate.m */; };
 		E9D7631C1A419AF80083CDF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D7631B1A419AF80083CDF1 /* ViewController.m */; };
@@ -14,6 +21,10 @@
 		E9D763211A419AF80083CDF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D763201A419AF80083CDF1 /* Images.xcassets */; };
 		E9D763241A419AF80083CDF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D763221A419AF80083CDF1 /* LaunchScreen.xib */; };
 		E9D763301A419AF80083CDF1 /* FeedtickRemoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D7632F1A419AF80083CDF1 /* FeedtickRemoteTests.m */; };
+		E9D763421A419C720083CDF1 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D763411A419C720083CDF1 /* User.m */; };
+		E9D763451A419DC40083CDF1 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D763441A419DC40083CDF1 /* Feed.m */; };
+		E9D763481A419F5D0083CDF1 /* Hub.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D763471A419F5D0083CDF1 /* Hub.m */; };
+		E9D7634D1A41A3990083CDF1 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D7634C1A41A3990083CDF1 /* BaseService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D9E0168343C375117EBC55A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AED9B8BCE774BB92566A986D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E90A544B1A445EA90072606F /* instagram_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = instagram_icon.png; path = ../../../IdeaProjects/FeedtickRemote/app/src/main/res/drawable/instagram_icon.png; sourceTree = "<group>"; };
+		E90A544C1A445EA90072606F /* twitter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter_icon.png; path = ../../../IdeaProjects/FeedtickRemote/app/src/main/res/drawable/twitter_icon.png; sourceTree = "<group>"; };
+		E910C2571A42034200FB67EA /* HubController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HubController.h; sourceTree = "<group>"; };
+		E910C2581A42034200FB67EA /* HubController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HubController.m; sourceTree = "<group>"; };
+		E910C25B1A42BB6300FB67EA /* PostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostController.h; sourceTree = "<group>"; };
+		E910C25C1A42BB6300FB67EA /* PostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostController.m; sourceTree = "<group>"; };
+		E910C25F1A430EB100FB67EA /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		E910C2601A430EB100FB67EA /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
+		E910C2611A430EB100FB67EA /* PostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		E95262082D6AACFD611A003B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D763101A419AF80083CDF1 /* FeedtickRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedtickRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D763141A419AF80083CDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9D763151A419AF80083CDF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +63,14 @@
 		E9D763291A419AF80083CDF1 /* FeedtickRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedtickRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D7632E1A419AF80083CDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9D7632F1A419AF80083CDF1 /* FeedtickRemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedtickRemoteTests.m; sourceTree = "<group>"; };
+		E9D763401A419C720083CDF1 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E9D763411A419C720083CDF1 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E9D763431A419DC40083CDF1 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		E9D763441A419DC40083CDF1 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
+		E9D763461A419F5D0083CDF1 /* Hub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hub.h; sourceTree = "<group>"; };
+		E9D763471A419F5D0083CDF1 /* Hub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hub.m; sourceTree = "<group>"; };
+		E9D7634B1A41A3990083CDF1 /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
+		E9D7634C1A41A3990083CDF1 /* BaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1612B22F72C9CD25760B0E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +92,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87456B41CD0312F2377DAFD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AED9B8BCE774BB92566A986D /* Pods.debug.xcconfig */,
+				1D9E0168343C375117EBC55A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE111C6FF83A6A2908D9F381 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E95262082D6AACFD611A003B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E90A544A1A445E5E0072606F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E90A544B1A445EA90072606F /* instagram_icon.png */,
+				E90A544C1A445EA90072606F /* twitter_icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E910C2531A4202E600FB67EA /* HubController */ = {
+			isa = PBXGroup;
+			children = (
+				E910C2571A42034200FB67EA /* HubController.h */,
+				E910C2581A42034200FB67EA /* HubController.m */,
+			);
+			name = HubController;
+			sourceTree = "<group>";
+		};
+		E910C25A1A42BB4900FB67EA /* PostController */ = {
+			isa = PBXGroup;
+			children = (
+				E910C25B1A42BB6300FB67EA /* PostController.h */,
+				E910C25C1A42BB6300FB67EA /* PostController.m */,
+			);
+			name = PostController;
+			sourceTree = "<group>";
+		};
+		E910C25E1A430E8500FB67EA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E910C2641A430EB600FB67EA /* PostCell */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E910C2641A430EB600FB67EA /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				E910C25F1A430EB100FB67EA /* PostCell.h */,
+				E910C2601A430EB100FB67EA /* PostCell.m */,
+				E910C2611A430EB100FB67EA /* PostCell.xib */,
+			);
+			name = PostCell;
+			sourceTree = "<group>";
+		};
 		E9D763071A419AF80083CDF1 = {
 			isa = PBXGroup;
 			children = (
 				E9D763121A419AF80083CDF1 /* FeedtickRemote */,
 				E9D7632C1A419AF80083CDF1 /* FeedtickRemoteTests */,
 				E9D763111A419AF80083CDF1 /* Products */,
+				87456B41CD0312F2377DAFD1 /* Pods */,
+				AE111C6FF83A6A2908D9F381 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +177,12 @@
 		E9D763121A419AF80083CDF1 /* FeedtickRemote */ = {
 			isa = PBXGroup;
 			children = (
-				E9D763171A419AF80083CDF1 /* AppDelegate.h */,
-				E9D763181A419AF80083CDF1 /* AppDelegate.m */,
-				E9D7631A1A419AF80083CDF1 /* ViewController.h */,
-				E9D7631B1A419AF80083CDF1 /* ViewController.m */,
+				E90A544A1A445E5E0072606F /* Resources */,
+				E910C25E1A430E8500FB67EA /* UI */,
+				E9D7634A1A41A1260083CDF1 /* Services */,
+				E9D7633C1A419BF90083CDF1 /* Models */,
+				E9D7633A1A419B440083CDF1 /* Controllers */,
+				E9D763391A419B240083CDF1 /* AppDelagate */,
 				E9D7631D1A419AF80083CDF1 /* Main.storyboard */,
 				E9D763201A419AF80083CDF1 /* Images.xcassets */,
 				E9D763221A419AF80083CDF1 /* LaunchScreen.xib */,
@@ -119,6 +217,88 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E9D763391A419B240083CDF1 /* AppDelagate */ = {
+			isa = PBXGroup;
+			children = (
+				E9D763171A419AF80083CDF1 /* AppDelegate.h */,
+				E9D763181A419AF80083CDF1 /* AppDelegate.m */,
+			);
+			name = AppDelagate;
+			sourceTree = "<group>";
+		};
+		E9D7633A1A419B440083CDF1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E910C25A1A42BB4900FB67EA /* PostController */,
+				E910C2531A4202E600FB67EA /* HubController */,
+				E9D7633B1A419B5F0083CDF1 /* ViewController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E9D7633B1A419B5F0083CDF1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9D7631A1A419AF80083CDF1 /* ViewController.h */,
+				E9D7631B1A419AF80083CDF1 /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E9D7633C1A419BF90083CDF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9D7633F1A419C130083CDF1 /* Hub */,
+				E9D7633E1A419C0D0083CDF1 /* Feed */,
+				E9D7633D1A419C040083CDF1 /* User */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E9D7633D1A419C040083CDF1 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E9D763401A419C720083CDF1 /* User.h */,
+				E9D763411A419C720083CDF1 /* User.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		E9D7633E1A419C0D0083CDF1 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				E9D763431A419DC40083CDF1 /* Feed.h */,
+				E9D763441A419DC40083CDF1 /* Feed.m */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		E9D7633F1A419C130083CDF1 /* Hub */ = {
+			isa = PBXGroup;
+			children = (
+				E9D763461A419F5D0083CDF1 /* Hub.h */,
+				E9D763471A419F5D0083CDF1 /* Hub.m */,
+			);
+			name = Hub;
+			sourceTree = "<group>";
+		};
+		E9D763491A41A1180083CDF1 /* BaseService */ = {
+			isa = PBXGroup;
+			children = (
+				E9D7634B1A41A3990083CDF1 /* BaseService.h */,
+				E9D7634C1A41A3990083CDF1 /* BaseService.m */,
+			);
+			name = BaseService;
+			sourceTree = "<group>";
+		};
+		E9D7634A1A41A1260083CDF1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E9D763491A41A1180083CDF1 /* BaseService */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9D763331A419AF80083CDF1 /* Build configuration list for PBXNativeTarget "FeedtickRemote" */;
 			buildPhases = (
+				1C0BEF44C08CF0D6ACD01838 /* Check Pods Manifest.lock */,
 				E9D7630C1A419AF80083CDF1 /* Sources */,
 				E9D7630D1A419AF80083CDF1 /* Frameworks */,
 				E9D7630E1A419AF80083CDF1 /* Resources */,
+				86534A73E09A976F8D76FB68 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,9 +381,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90A544E1A445EA90072606F /* twitter_icon.png in Resources */,
 				E9D7631F1A419AF80083CDF1 /* Main.storyboard in Resources */,
 				E9D763241A419AF80083CDF1 /* LaunchScreen.xib in Resources */,
+				E90A544D1A445EA90072606F /* instagram_icon.png in Resources */,
 				E9D763211A419AF80083CDF1 /* Images.xcassets in Resources */,
+				E910C2631A430EB100FB67EA /* PostCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +399,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C0BEF44C08CF0D6ACD01838 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		86534A73E09A976F8D76FB68 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9D7630C1A419AF80083CDF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E910C25D1A42BB6300FB67EA /* PostController.m in Sources */,
+				E9D763451A419DC40083CDF1 /* Feed.m in Sources */,
+				E9D763421A419C720083CDF1 /* User.m in Sources */,
+				E9D7634D1A41A3990083CDF1 /* BaseService.m in Sources */,
 				E9D7631C1A419AF80083CDF1 /* ViewController.m in Sources */,
+				E9D763481A419F5D0083CDF1 /* Hub.m in Sources */,
+				E910C2591A42034200FB67EA /* HubController.m in Sources */,
 				E9D763191A419AF80083CDF1 /* AppDelegate.m in Sources */,
 				E9D763161A419AF80083CDF1 /* main.m in Sources */,
+				E910C2621A430EB100FB67EA /* PostCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +566,7 @@
 		};
 		E9D763341A419AF80083CDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED9B8BCE774BB92566A986D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FeedtickRemote/Info.plist;
@@ -351,6 +577,7 @@
 		};
 		E9D763351A419AF80083CDF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D9E0168343C375117EBC55A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FeedtickRemote/Info.plist;
@@ -412,6 +639,7 @@
 				E9D763351A419AF80083CDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9D763361A419AF80083CDF1 /* Build configuration list for PBXNativeTarget "FeedtickRemoteTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +648,7 @@
 				E9D763381A419AF80083CDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
