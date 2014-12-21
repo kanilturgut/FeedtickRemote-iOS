@@ -20,6 +20,7 @@
 
 @synthesize hubId;
 NSMutableArray *posts;
+NSString *journalId;
 
 
 - (void)viewDidLoad {
@@ -28,7 +29,7 @@ NSMutableArray *posts;
     
     _lblHeader.backgroundColor = [UIColor colorWithRed:0.255 green:0.792 blue:0.753 alpha:1];
     
-    NSString *journalId = hubId;
+    journalId = hubId;
     posts = [NSMutableArray new];
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
@@ -79,14 +80,83 @@ NSMutableArray *posts;
     cell.ivSocialMedia.image = img;
     [cell.ivPostImage setImageURL:[NSURL URLWithString:imageURL]];
     
+    cell.bSticky.tag = indexPath.row;
+    [cell.bSticky addTarget:self action:@selector(stickyButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    cell.bAprrove.tag = indexPath.row;
+    [cell.bAprrove addTarget:self action:@selector(approveButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    cell.bDeny.tag = indexPath.row;
+    [cell.bDeny addTarget:self action:@selector(denyButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+
+    
     return cell;
     
+}
+
+-(void)stickyButtonClicked:(UIButton*)sender {
+    long rowNumber = sender.tag;
+    
+    NSDictionary *feed = [posts objectAtIndex:rowNumber];
+    
+    NSMutableDictionary *dic = [NSMutableDictionary new];
+    [dic setObject:journalId forKey:@"journalId"];
+    [dic setObject:[feed objectForKey:@"_id"] forKey:@"postId"];
+    [dic setObject:[NSNumber numberWithInt:STATUS_STICKY] forKey:@"status"];
+    
+    [[Feed new] changePostStatus:dic completion:^(BOOL isSuccess) {
+        if (isSuccess) {
+            NSLog(@"Success");
+        } else {
+            NSLog(@"Fail");
+        }
+    }];
+}
+
+-(void)approveButtonClicked:(UIButton*)sender {
+    long rowNumber = sender.tag;
+
+    NSDictionary *feed = [posts objectAtIndex:rowNumber];
+    
+    NSMutableDictionary *dic = [NSMutableDictionary new];
+    [dic setObject:journalId forKey:@"journalId"];
+    [dic setObject:[feed objectForKey:@"_id"] forKey:@"postId"];
+    [dic setObject:[NSNumber numberWithInt:STATUS_APPROVED] forKey:@"status"];
+    
+    [[Feed new] changePostStatus:dic completion:^(BOOL isSuccess) {
+        if (isSuccess) {
+            NSLog(@"Success");
+        } else {
+            NSLog(@"Fail");
+        }
+    }];
+}
+
+-(void)denyButtonClicked:(UIButton*)sender {
+    long rowNumber = sender.tag;
+
+    NSDictionary *feed = [posts objectAtIndex:rowNumber];
+    
+    NSMutableDictionary *dic = [NSMutableDictionary new];
+    [dic setObject:journalId forKey:@"journalId"];
+    [dic setObject:[feed objectForKey:@"_id"] forKey:@"postId"];
+    [dic setObject:[NSNumber numberWithInt:STATUS_DENIED] forKey:@"status"];
+    
+    [[Feed new] changePostStatus:dic completion:^(BOOL isSuccess) {
+        if (isSuccess) {
+            NSLog(@"Success");
+        } else {
+            NSLog(@"Fail");
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 /*
 #pragma mark - Navigation

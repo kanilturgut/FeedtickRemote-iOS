@@ -33,4 +33,23 @@
     }];
 }
 
+- (void) changePostStatus:(NSDictionary *) params completion:(void(^)(BOOL)) completionBlock {
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:params options:NSJSONWritingPrettyPrinted error:nil];
+    
+    [[BaseService instance] sendAsyncRequestToURL:CHANGE_JOURNAL_POST_STATUS method:@"POST" data:jsonData completion:^(NSURLResponse *response, NSData *data, NSError *err) {
+
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+        long responseCode = [httpResponse statusCode];
+        
+        if (completionBlock) {
+            if (responseCode == 200) {
+                completionBlock(YES);
+            } else {
+                completionBlock(NO);
+            }
+        }
+    }];
+}
+
 @end

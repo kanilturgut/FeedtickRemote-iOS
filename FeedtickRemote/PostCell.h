@@ -15,7 +15,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *tvUsername;
 @property (weak, nonatomic) IBOutlet UILabel *tvPostText;
 
-- (IBAction)bSticky:(id)sender;
-- (IBAction)bAprrove:(id)sender;
-- (IBAction)bDeny:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *bSticky;
+@property (weak, nonatomic) IBOutlet UIButton *bAprrove;
+@property (weak, nonatomic) IBOutlet UIButton *bDeny;
+
+
 @end

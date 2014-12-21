@@ -42,5 +42,6 @@
 @property (nonatomic, assign) NSInteger *status;
 
 - (void) getPostList:(NSDictionary *) params completion:(void (^) (NSArray *)) completionBlock;
+- (void) changePostStatus:(NSDictionary *) params completion:(void(^)(BOOL)) completionBlock;
 
 @end

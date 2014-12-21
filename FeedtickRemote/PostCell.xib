@@ -61,6 +61,9 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="bAprrove" destination="Laz-g3-OgI" id="HwW-RJ-94n"/>
+                <outlet property="bDeny" destination="Gb2-4a-NGa" id="zjr-PU-zsG"/>
+                <outlet property="bSticky" destination="zaS-aq-OBu" id="ctC-Wf-g6q"/>
                 <outlet property="ivPostImage" destination="Qwh-8W-WmH" id="Lfv-87-p4U"/>
                 <outlet property="ivSocialMedia" destination="JMa-8O-aSK" id="2DI-zL-G27"/>
                 <outlet property="tvPostText" destination="Xap-aS-rtF" id="IJO-hY-44R"/>
